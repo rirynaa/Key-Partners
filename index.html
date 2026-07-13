@@ -4,26 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key Partners</title>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="./script.js" defer ></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="map" style="width: 100%; height: 100vh;"></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        var map = L.map('map').setView([38.895, -77.036], 13);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        L.marker([38.93662102512126, -77.1092314457026]).addTo(map)
-        .bindPopup('Sibley Memorial Hospital<br>5255 Loughboro Rd NW, Washington, DC 20016')
-        L.marker([38.92956, -77.014524]).addTo(map)
-        .bindPopup('MedStar Washington Hospital Center<br>110 Irving St NW, Washington,DC 20010')
-        L.marker([38.912117, -77.075553]).addTo(map)
-        .bindPopup('MedStar Georgetown University Hospital<br>3800 Reservoir Rd NW, Washington, DC 20007')
-        L.marker([38.927488, -77.014586]).addTo(map)
-        .bindPopup('Children\'s National Hospital<br>111 Michigan Ave NW, Washington, DC 20010')
-    </script>
 
 </body>
 </html>
