@@ -1,6 +1,6 @@
 async function getData() {	
     return new Promise((resolve, reject) => {		
-        Papa.parse('./data.csv', {			
+        Papa.parse('./data/latest_data.csv', {			
             download:true,			
             header:true,			
             complete:(results) => {								
