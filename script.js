@@ -32,9 +32,9 @@ var youth_focused = L.icon({
 });
 
 var career_workforce = L.icon({
-    iconUrl: 'static/career.png',
-    iconSize: [90, 50],
-    iconAnchor: [45, 50],
+    iconUrl: 'static/career_icon.png',
+    iconSize: [30, 45],
+    iconAnchor: [15, 45],
     popupAnchor: [1, -34]
 });
 
@@ -45,7 +45,7 @@ var icons = {
     "career_workforce": career_workforce
 };
 
-var map = L.map('map').setView([38.895, -77.036], 12);
+var map = L.map('map').setView([38.895, -77.036], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

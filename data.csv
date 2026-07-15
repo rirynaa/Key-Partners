@@ -8,22 +8,22 @@ org_id,org_name,address,org_type,"longitude, latitude",phone,description,image
 0007,BOSSDC Nonprofit for Youth Development ,"1231 Marion Barry Ave SE, Washington, DC 20020",youth_focused,"38.867206716532706, -76.9875512457057",(202) 903-8638,[Insert Paragraph],https://www.bossdc.org/wp-content/uploads/al_opt_content/IMAGE/www.bossdc.org/wp-content/uploads/2025/10/76945462.png.bv.webp?bv_host=www.bossdc.org
 0008,"Active Minds, Inc. ","2001 S St NW #700, Washington, DC 20009 ",youth_focused,"38.91441085125684, -77.04514677454003",(202) 332-9595,[Insert Paragraph],https://assets.activeminds.org/wp-content/uploads/2025/03/active_minds-logo-stacked-full_color-NAV.png?strip=all
 0009,City Blossoms,"516 Kennedy St NW, Washington, DC 20011",youth_focused,"38.956436547090696, -77.0207382033746",(202) 882-2628,[Insert Paragraph],https://images.squarespace-cdn.com/content/v1/5556a39be4b0741e9be3f1e4/1433007050216-Z0IZD0YGMG6Q7UX5WT2K/cityblossoms_logo2_bgy_just+words.jpg?format=1500w
-0010,Greater Fellowship Gospel Baptist Church ,"814 Alabama Ave SE, Washington, DC 20032 ",church,"38.84408757148174, -76.9939754417433",,[Insert Paragraph],https://storage1.snappages.site/3VDZR8/assets/images/6128814_2000x2000_500.png
-0011,Calvary Episcopal Church ,"820 6th St NE, Washington, DC 20002 ",church,"38.90367379401674, -76.99940244319819",,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-b5067835-f8d9-4039-b6bf-294d74979a63.png
-0012,Cathedral of St. Matthew the Apostle ,"1725 Rhode Island Ave NW, Washington, DC 20036",church,"38.906642491355825, -77.04010684570395",,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-437852e2-0041-431d-95e8-2db76b05b1bf.png
-0013,The United Church ,"1920 G St NW, Washington, DC 20006",church,"38.89832666710424, -77.04472391872262",,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-0a02ca6b-8201-46a8-b491-6b2a9c70db78.png
-0014,Martha's Table Market at the Maycroft - Grocery Distribution,"1474 Columbia Rd NW, Washington, DC 20009",food_bank,,,,
-0015,Martha's Table at The Commons,"2375 Elvans Rd SE, Washington, DC 20020",food_bank,,,,
-0016,National Youth Employment Coalition,"1155 15th St NW Ste 725, Washington, DC 20005",youth_focused,,,,
-0017,Career Path DC,"3215 Martin Luther King Jr Ave SE, Washington, DC 20032",career_workforce,,,,
-0018,Coalition For Non Profit Housing and Economic Development,"727 15th St NW #600, Washington, DC 20005",career_workforce,,,,
-0019,,,,,,,
-0020,,,,,,,
-0021,,,,,,,
-0022,,,,,,,
-0023,,,,,,,
-0024,,,,,,,
-0025,,,,,,,
+0010,Greater Fellowship Gospel Baptist Church ,"814 Alabama Ave SE, Washington, DC 20032 ",church,"38.84408757148174, -76.9939754417433",(202) 561-5594,[Insert Paragraph],https://storage1.snappages.site/3VDZR8/assets/images/6128814_2000x2000_500.png
+0011,Calvary Episcopal Church ,"820 6th St NE, Washington, DC 20002 ",church,"38.90367379401674, -76.99940244319819",(202) 546-8011,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-b5067835-f8d9-4039-b6bf-294d74979a63.png
+0012,Cathedral of St. Matthew the Apostle ,"1725 Rhode Island Ave NW, Washington, DC 20036",church,"38.906642491355825, -77.04010684570395",(202) 347-3215,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-437852e2-0041-431d-95e8-2db76b05b1bf.png
+0013,The United Church ,"1920 G St NW, Washington, DC 20006",church,"38.89832666710424, -77.04472391872262",(202) 331-1495,[Insert Paragraph],https://cdn.phototourl.com/free/2026-07-14-0a02ca6b-8201-46a8-b491-6b2a9c70db78.png
+0014,Martha's Table Market at the Maycroft - Grocery Distribution,"1474 Columbia Rd NW, Washington, DC 20009",food_bank,"38.93053817890354, -77.03510790885386",(202) 328-6608,[Insert Paragraph],
+0015,Martha's Table at The Commons,"2375 Elvans Rd SE, Washington, DC 20020",food_bank,"38.85547838903769, -76.98464821854104",(202)-328-6608,[Insert Paragraph],
+0016,National Youth Employment Coalition,"1155 15th St NW Ste 725, Washington, DC 20005",youth_focused,"38.90519438757766, -77.03431500993882",(202) 780-5928,[Insert Paragraph],
+0017,Career Path DC,"3215 Martin Luther King Jr Ave SE, Washington, DC 20032",career_workforce,"38.84322146725434, -77.00128734552324",(202) 400-4635,[Insert Paragraph],
+0018,Coalition For Non Profit Housing and Economic Development,"727 15th St NW #600, Washington, DC 20005",career_workforce,"38.89977136470365, -77.0332032166846",(202) 745-0902,[Insert Paragraph],
+0019,,,,,,[Insert Paragraph],
+0020,,,,,,[Insert Paragraph],
+0021,,,,,,[Insert Paragraph],
+0022,,,,,,[Insert Paragraph],
+0023,,,,,,[Insert Paragraph],
+0024,,,,,,[Insert Paragraph],
+0025,,,,,,[Insert Paragraph],
 0026,,,,,,,
 0027,,,,,,,
 0028,,,,,,,
