@@ -10,7 +10,7 @@ latest_filename = f"datav{latestVersion}.csv"
 
 def copyAndRenameFile():
     source_path = os.path.join("./data", latest_filename)
-    destination_path = os.path.join("./data", "latest_data.csv")
+    destination_path = "latest_data.csv"
     shutil.copyfile(source_path, destination_path)
     print(f"Copied {latest_filename} → {destination_path}")
 

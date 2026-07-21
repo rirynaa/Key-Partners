@@ -1,3 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: #ffffff;
+    padding: 1.25rem 3rem;
+}
+
+h1 {
+    font-size: 70px;
+    font-size: 4.375rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
+.mapIntro {
+    background-color: #cde2ff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: #151a39;
+    padding: 1.25rem 3rem;
+    color: #ffffff;
+}
+
 .popup-img{
     width: 100%;
     display: block;
