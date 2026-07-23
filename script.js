@@ -79,3 +79,12 @@ legend.onAdd = function(map) {
 };
 
 legend.addTo(map);
+
+function submitSelection() {
+    let selectedItems = [];
+    let checkboxes = document.querySelectorAll(
+        'input[type=checkbox]: checked');
+        checkboxes.forEach(function (checkbox) {
+            selectedItems.push(checkbox.value);
+        });
+}
