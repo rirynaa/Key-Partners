@@ -57,19 +57,21 @@ for (let i = 0; i < data.length; i++) {
     data[i]["website"] ? `<a href="${data[i]["website"]}" target="_blank">Visit Website</a>` : null
     ];
     let popupContent = parts.filter(Boolean).join('<br>');
-    L.marker([lat, lng], {icon: iconType}).addTo(map).bindPopup(popupContent, {
-        maxWidth: 300,
-        autoPan: true,
-        autoPanPaddingTopLeft: [50, 150],
-        autoPanPaddingBottomRight: [50, 50],    
-        maxHeight: 300});
+    let marker  = L.marker([lat, lng], {icon: iconType})
+        .addTo(map)
+        .bindPopup(popupContent, {
+            maxWidth: 300,
+            autoPan: true,
+            autoPanPaddingTopLeft: [50, 150],
+            autoPanPaddingBottomRight: [50, 50],    
+            maxHeight: 300});
 }
 
 var legend = L.control({ position: "bottomleft" });
 
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Organization Types</h4>";
+  div.innerHTML += "<h4>Organization Types<br></h4>";
   div.innerHTML += '<i style="background: #5573BB"></i><span>Church</span><br>';
   div.innerHTML += '<br><i style="background: #39A448"></i><span>Food Bank</span><br>';
   div.innerHTML += '<br><i style="background: #FF3B3C"></i><span>Career Workforce</span><br>';
@@ -79,12 +81,3 @@ legend.onAdd = function(map) {
 };
 
 legend.addTo(map);
-
-function submitSelection() {
-    let selectedItems = [];
-    let checkboxes = document.querySelectorAll(
-        'input[type=checkbox]: checked');
-        checkboxes.forEach(function (checkbox) {
-            selectedItems.push(checkbox.value);
-        });
-}
