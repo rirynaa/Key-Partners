@@ -10,40 +10,21 @@ async function getData() {
     }
 );}
 
-var church = L.icon({
-    iconUrl: 'static/church_icon.png',
-    iconSize: [80, 60],
-    iconAnchor: [40, 60],
-    popupAnchor: [1, -34]
-});
+function createMarker(iconUrl) {
+    return L.divIcon({
+        className: 'custom-marker',
+        html: `<img src="${iconUrl}" class="marker-inner" />`,
+        iconSize: [25, 45],
+        iconAnchor: [15, 45],
+        popupAnchor: [1, -34]
+    });
+}
 
-var food_bank = L.icon({
-    iconUrl: 'static/food_bank_icon.png',
-    iconSize: [25, 45],
-    iconAnchor: [15, 45],
-    popupAnchor: [1, -34]
-});
-
-var youth_focused = L.icon({
-    iconUrl: 'static/youth_icon.png',
-    iconSize: [90, 50],
-    iconAnchor: [45, 50],
-    popupAnchor: [1, -34]
-});
-
-var career_workforce = L.icon({
-    iconUrl: 'static/career_icon.png',
-    iconSize: [30, 45],
-    iconAnchor: [15, 45],
-    popupAnchor: [1, -34]
-});
-
-var social_welfare = L.icon({
-    iconUrl: 'static/social_icon.png',
-    iconSize: [25, 45],
-    iconAnchor: [15, 45],
-    popupAnchor: [1, -34]
-});
+var social_welfare = createMarker('static/social_icon.png');
+var church = createMarker('static/church_icon.png');
+var food_bank = createMarker('static/food_bank_icon.png');
+var youth_focused = createMarker('static/youth_icon.png');
+var career_workforce = createMarker('static/career_icon.png');
 
 var icons = {
     "church": church,
@@ -76,7 +57,12 @@ for (let i = 0; i < data.length; i++) {
     data[i]["website"] ? `<a href="${data[i]["website"]}" target="_blank">Visit Website</a>` : null
     ];
     let popupContent = parts.filter(Boolean).join('<br>');
-    L.marker([lat, lng], {icon: iconType}).addTo(map).bindPopup(popupContent, {maxWidth: 300});
+    L.marker([lat, lng], {icon: iconType}).addTo(map).bindPopup(popupContent, {
+        maxWidth: 300,
+        autoPan: true,
+        autoPanPaddingTopLeft: [50, 150],
+        autoPanPaddingBottomRight: [50, 50],    
+        maxHeight: 300});
 }
 
 var legend = L.control({ position: "bottomleft" });
@@ -88,7 +74,7 @@ legend.onAdd = function(map) {
   div.innerHTML += '<br><i style="background: #39A448"></i><span>Food Bank</span><br>';
   div.innerHTML += '<br><i style="background: #FF3B3C"></i><span>Career Workforce</span><br>';
   div.innerHTML += '<br><i style="background: #000000"></i><span>Youth Focused</span><br>';
-  div.innerHTML += '<br><i style="background: #808080"></i><span>Social Welfare</span><br>';
+  div.innerHTML += '<br><i style="background: #facb0f"></i><span>Social Welfare</span><br>';
   return div;
 };
 
