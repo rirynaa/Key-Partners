@@ -42,6 +42,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let data = await getData();
 
+
+let allMarkers = [];
 for (let i = 0; i < data.length; i++) {
     if (!data[i]["lat, long"]) continue;
     let coords = data[i]["lat, long"].split(", ");
@@ -56,6 +58,7 @@ for (let i = 0; i < data.length; i++) {
     data[i]["description"],
     data[i]["website"] ? `<a href="${data[i]["website"]}" target="_blank">Visit Website</a>` : null
     ];
+    let ward = data[i]["ward"];
     let popupContent = parts.filter(Boolean).join('<br>');
     let marker  = L.marker([lat, lng], {icon: iconType})
         .addTo(map)
@@ -64,7 +67,9 @@ for (let i = 0; i < data.length; i++) {
             autoPan: true,
             autoPanPaddingTopLeft: [50, 150],
             autoPanPaddingBottomRight: [50, 50],    
-            maxHeight: 300});
+            maxHeight: 300
+        });
+    allMarkers.push({marker, type:data[i]["org_type"]});
 }
 
 var legend = L.control({ position: "bottomleft" });
@@ -81,3 +86,24 @@ legend.onAdd = function(map) {
 };
 
 legend.addTo(map);
+
+$(document).ready(function() {
+            $("#submitButton").on("click", function() {
+                submitSelection();
+            });
+        });
+
+function submitSelection() {
+    console.log("submitSelection running");
+    let checkedTypes = Array.from(document.querySelectorAll('.type_filter:checked'))
+    .map(cb=> cb.value);
+
+    allMarkers.forEach(m => {
+        let show = checkedTypes.length === 0 || checkedTypes.includes(m.type);
+        if (show) {
+            if (!map.hasLayer(m.marker)) m.marker.addTo(map);
+        } else {
+            map.removeLayer(m.marker);
+        }
+    });
+}

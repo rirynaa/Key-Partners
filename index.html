@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script type="module" src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -33,23 +33,10 @@
                     <label><input type="checkbox" class="type_filter" value="social_welfare"> Social Welfare</label>
                     <label><input type="checkbox" class="type_filter" value="food_bank"> Food Bank</label>
                     <label><input type="checkbox" class="type_filter" value="youth_focused"> Youth Focused</label>
-                    <label><input type="checkbox" class="type_filter" value="Career Workforce"> Career Workforce</label>
+                    <label><input type="checkbox" class="type_filter" value=career_workforce"> Career Workforce</label>
                 </div>
             </div>
-            <div class="dropdown" id="wardSelect">
-                <button class="dropButton">Ward▾</button>
-                <div class="dropdownContent">
-                    <label><input type="checkbox" class="ward_filter" value="1"> Ward 1</label>
-                    <label><input type="checkbox" class="ward_filter" value="2"> Ward 2</label>
-                    <label><input type="checkbox" class="ward_filter" value="3"> Ward 3</label>
-                    <label><input type="checkbox" class="ward_filter" value="4"> Ward 4</label>
-                    <label><input type="checkbox" class="ward_filter" value="5"> Ward 5</label>
-                    <label><input type="checkbox" class="ward_filter" value="6"> Ward 6</label>
-                    <label><input type="checkbox" class="ward_filter" value="7"> Ward 7</label>
-                    <label><input type="checkbox" class="ward_filter" value="8"> Ward 8</label>
-                </div>
-            </div>
-            <button onClick="submitSelection()" class="submitButton">Submit</button>
+            <button id="submitButton">Submit</button>
         </div>
         <div class="mapContainer">
             <div id="map"></div>
