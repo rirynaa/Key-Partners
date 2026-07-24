@@ -150,13 +150,13 @@ p {
     padding: 5px 10px;
 }
 
-.submitButton {
+#submitButton {
     background-color: #ffffff;
     color: #000000;
     padding: 5px 10px;
 }
 
-.submitButton:hover {
+#submitButton:hover {
     background-color: #ffffffe6;
     cursor: pointer;
 }
@@ -186,7 +186,3 @@ label {
     display: block;
     margin-bottom: 5px;
         }
-        
-.submit-btn {
-    margin-top: 10px;
-}
