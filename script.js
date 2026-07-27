@@ -25,13 +25,15 @@ var church = createMarker('static/church_icon.png');
 var food_bank = createMarker('static/food_bank_icon.png');
 var youth_focused = createMarker('static/youth_icon.png');
 var career_workforce = createMarker('static/career_icon.png');
+var neighborhood = createMarker('static/neighborhood_icon.png')
 
 var icons = {
     "church": church,
     "food_bank": food_bank,
     "youth_focused": youth_focused,
     "career_workforce": career_workforce,
-    "social_welfare": social_welfare
+    "social_welfare": social_welfare,
+    "adv_neighborhood_commission": neighborhood
 };
 
 var map = L.map('map').setView([38.895, -77.036], 13);
