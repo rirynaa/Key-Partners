@@ -31,6 +31,6 @@ if __name__ == "__main__":
     filepath = getFilepath()
     df = pd.read_csv(filepath)
     df = get_coordinates(df, address_column="address")
-    df = df.replace(["NA", "N/A", "n/a", "None", ""], pd.NA)
+    df = df.replace(["NA", "N/A", "n/a", "None", "", " N/A "], pd.NA)
     df["ward"] = df["ward"].astype("Int64")
     df.to_csv("latest_data.csv", index=False)

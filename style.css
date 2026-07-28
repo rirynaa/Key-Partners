@@ -100,16 +100,20 @@ p {
     justify-content: center;
     gap: 1rem;
     padding: 1.5rem 0;
-    background-color: #151a39;
+    background-color: #1f3469;
     color: white;
     font-size: 14px;
     font-size: 0.875rem;
 }   
 
 .popup-img{
-    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    width: auto;
+    height: auto;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .legend {
